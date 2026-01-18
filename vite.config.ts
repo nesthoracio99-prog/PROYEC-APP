@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // ✅ Rutas relativas (GitHub Pages / subcarpeta / deploy)
+  // ✅ Rutas relativas (ideal para GitHub Pages / subcarpetas)
   base: './',
 
-  // ✅ Target moderno (evita broncas con "top-level await")
+  // ✅ Target moderno (evita broncas con top-level await)
   build: {
     target: 'esnext',
   },

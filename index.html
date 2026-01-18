@@ -8,7 +8,7 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CCTV Visor Pro v15 Mobile — v15-stable</title>
+  <title>CCTV — Visor 3D Pro (v15-stable)</title>
   <style>
     html, body { margin:0; height:100%; overflow:hidden; background:#0b0f14; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
@@ -172,7 +172,7 @@
 
   <div id="hud">
     <h3>
-      <span><span class="status-dot"></span>CCTV Visor Pro v15 Mobile</span>
+      <span><span class="status-dot"></span>CCTV Visor Pro v15 Mobile — v15-stable</span>
       <span style="display:flex; gap:6px; align-items:center;">
       <button id="btnHudToggle" class="iconbtn" title="Mostrar/Ocultar panel">☰</button>
       <button id="btnModeToggle" class="iconbtn" title="Modo Fácil / Pro">🎛️</button>
@@ -440,9 +440,8 @@
   <div id="err"></div>
 
   <script type="module">
-(async () => {
-
-    // --- Referencias UI ---
+    (async () => {
+// --- Referencias UI ---
     const ui = {
       err: document.getElementById('err'),
       out: document.getElementById('out'),
@@ -2831,9 +2830,10 @@ function showMsg(txt, isSuccess){
 
       await loadLocal(); try{ updateWizard(); }catch(e){}; syncStyleUI(); anim();
 })().catch(console.error);
+</script>
 
-  </script>
-<script type="module" src="./src/main.ts"></script>
+  
+  <script type="module" src="./src/main.ts"></script>
 
 </body>
 </html>
