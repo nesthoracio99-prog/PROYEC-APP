@@ -2830,7 +2830,8 @@ function showMsg(txt, isSuccess){
     ui.btnShot?.addEventListener('click', capturePNG);
 
       await loadLocal(); try{ updateWizard(); }catch(e){}; syncStyleUI(); anim();
-})();
+})().catch(console.error);
+
   </script>
 <script type="module" src="./src/main.ts"></script>
 
