@@ -440,6 +440,8 @@
   <div id="err"></div>
 
   <script type="module">
+(async () => {
+
     // --- Referencias UI ---
     const ui = {
       err: document.getElementById('err'),
@@ -2828,10 +2830,10 @@ function showMsg(txt, isSuccess){
     ui.btnShot?.addEventListener('click', capturePNG);
 
       await loadLocal(); try{ updateWizard(); }catch(e){}; syncStyleUI(); anim();
+})();
   </script>
 
-  
-  <script type="module" src="/src/main.ts"></script>
+ <script type="module" src="./src/main.ts"></script>
 
 </body>
 </html>
