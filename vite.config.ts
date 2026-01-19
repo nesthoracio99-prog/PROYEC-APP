@@ -1,18 +1,17 @@
 import { defineConfig } from 'vite';
 
+// base: './' = rutas relativas (ideal para GitHub Pages, subcarpetas, etc.)
 export default defineConfig({
-  // ✅ Rutas relativas (ideal para GitHub Pages / subcarpetas)
   base: './',
 
-  // ✅ Target moderno (evita broncas con top-level await)
+  // ✅ Fix para "Top-level await is not available..."
   build: {
-    target: 'esnext',
+    target: 'es2022', // (o 'esnext' si quieres lo más flexible)
   },
   esbuild: {
-    target: 'esnext',
+    target: 'es2022',
   },
 
-  // ✅ Dev server fijo
   server: {
     port: 5175,
     strictPort: true,
